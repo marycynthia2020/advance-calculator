@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <title>Calculator</title>
+  </head>
+  <body class="bg-[#394763] w-screen h-screen grid place-items-center">
+    <div class="w-[90%] 2xl:h-1/2 2xl:w-[25%] md:w-[35%]">
+      <div
+        type="number"
+        name=""
+        class="bg-[#171f32] h-[80px] w-full rounded-md text-white text-2xl mb-4 p-6 overflow-x-hidden"
+        id="result"
+      >
+        0
+      </div>
+      <div
+        class="bg-[#171f32] w-full rounded-md gap-6 grid grid-cols-4 text-[#171f32] p-6"
+        id="button-container"
+      >
+        <button
+          data-button-type="number"
+          class="button bg-white rounded-md text-xl font-semibold py-1"
+        >
+          7
+        </button>
+        <button
+          class="button bg-white rounded-md text-xl font-semibold py-1"
+          data-button-type="number"
+        >
+          8
+        </button>
+        <button
+          data-button-type="number"
+          class="button bg-white rounded-md text-xl font-semibold py-1"
+        >
+          9
+        </button>
+        <button
+          class="button bg-[#394763] rounded-md text-xl text-white font-semibold py-1"
+          data-button-type="delete"
+        >
+          DEL
+        </button>
+        <button
+          class="button bg-white rounded-md text-xl font-semibold py-1"
+          data-button-type="number"
+        >
+          4
+        </button>
+        <button
+          class="button bg-white rounded-md text-xl font-semibold py-1"
+          data-button-type="number"
+        >
+          5
+        </button>
+        <button
+          class="button bg-white rounded-md text-xl font-semibold py-1"
+          data-button-type="number"
+        >
+          6
+        </button>
+        <button
+          class="button bg-white rounded-md text-xl font-semibold py-1"
+          data-button-type="operator"
+        >
+          +
+        </button>
+        <button
+          class="button bg-white rounded-md text-xl font-semibold py-1"
+          data-button-type="number"
+        >
+          1
+        </button>
+        <button
+          class="button bg-white rounded-md text-xl font-semibold py-1"
+          data-button-type="number"
+        >
+          2
+        </button>
+        <button
+          class="button bg-white rounded-md text-xl font-semibold py-1"
+          data-button-type="number"
+        >
+          3
+        </button>
+        <button
+          class="button bg-white rounded-md text-xl font-semibold py-1"
+          data-button-type="operator"
+        >
+          -
+        </button>
+        <button
+          class="button bg-white rounded-md text-xl font-semibold py-1"
+          data-button-type="decimal"
+        >
+          .
+        </button>
+        <button
+          class="button bg-white rounded-md text-xl font-semibold py-1"
+          data-button-type="number"
+        >
+          0
+        </button>
+        <button
+          class="button bg-white rounded-md text-xl font-semibold py-1"
+          data-button-type="operator"
+        >
+          /
+        </button>
+        <button
+          class="button bg-white rounded-md text-xl font-semibold py-1"
+          data-button-type="operator"
+        >
+          *
+        </button>
+        <button
+          class="button bg-[#394763] rounded-md text-xl text-white font-semibold py-1 col-span-2"
+          data-button-type="reset"
+        >
+          RESET
+        </button>
+        <button
+          class="button rounded-md text-xl font-semibold py-1 bg-red-500 col-span-2"
+          data-button-type="equality"
+        >
+          =
+        </button>
+      </div>
+    </div>
+    <script src="script/index.js"></script>
+  </body>
+</html>
