@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll(".button");
+// const buttons = document.querySelectorAll(".button");
 const container = document.getElementById("button-container");
 const result = document.getElementById("result");
 
@@ -116,35 +116,12 @@ function reset() {
 
 function deleteInput() {
   let newString = result.innerText.slice(0, -1);
+  console.log(newString);
   result.innerText = newString;
   if (result.innerText === "") {
     result.innerText = 0;
   }
-
-  // let newContent = result.innerText.split("");
-  // newContent.splice(-1, 1);
-  // result.innerText = newContent.join("");
-  //
 }
-
-// function getSolution() {
-//   let number = Number(result.innerText);
-//   result.innerText = number;
-// }
-
-// function disablebuttons() {
-//   let buttons = document.querySelectorAll('[data-button-type = "operator"]');
-//   // s
-
-//   arryOfOperators.forEach((operator) => {
-//     if (result.innerText.includes(operator)) {
-//       buttons.forEach((button) => (button.disabled = true));
-//     }
-//     if (!result.innerText.includes(operator)) {
-//       buttons.forEach((button) => (button.disabled = false));
-//     }
-//   });
-// }
 
 function calculate() {
   let results = result.innerText;
